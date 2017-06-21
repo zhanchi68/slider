@@ -53,7 +53,7 @@
 - (void)slideIterface:(UIPanGestureRecognizer *)panGesture {
     switch (panGesture.state) {
         case UIGestureRecognizerStateBegan:{
-//            CGPoint slidedistance = [panGesture translationInView:self.view];
+            CGPoint slidedistance = [panGesture translationInView:self.view];
             self.original = self.centerVeiw.frame;
             break;
         }
